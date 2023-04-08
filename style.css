@@ -1,8 +1,20 @@
+:root{
+  --main-bg-color: #FFFBFC;
+  --secondary-bg-color: #2D2B2A;
+  --accessory-color-r: #BA2D0B;
+  --accessory-color-g: #B28A36;
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: var(--main-bg-color);
+  color: var(--secondary-bg-color);
 }
 
 h2{
@@ -12,7 +24,6 @@ h2{
 
 .card-container{
   display: flex;
-  
 }
 
 .card{
@@ -30,14 +41,19 @@ a{
   justify-content: space-between;
 }
 
-i{
-  font-size: 4rem;
-  color: rgba(35, 200, 76, 0.8);
-  border: 2px solid rgba(35, 200, 76, 0.8);
+.icon-container{
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.25rem solid var(--accessory-color-r);
   border-radius: 50%;
-  padding: ;
-  width: 125px;
-  height: 125px;
+}
+
+i{
+  font-size: 1.5rem;
+  color: var(--accessory-color-r);
   padding: 20px;
   text-align: center;
   margin: auto;
